@@ -1,0 +1,21 @@
+extends layout
+block prepend title
+  | #{ page.title } &mdash; 
+
+block content
+  nav.arrow_about
+    a.about_label(href="/")
+      span.icon-angle-circled-left
+      span Home
+  include mixins
+  article.post
+    mixin date(page.date)
+    h1.post-title= page.title
+    mixin author(page.metadata.author)
+    section.content!= page.html
+
+  div.comment
+     a.icon-comment-empty(href="javascript:void(0)", onclick="renderComments()") Comments
+     div#gpluscomments
+     script(src='https://apis.google.com/js/plusone.js',type='text/javascript')
+     script(src=locals.url + "/asserts/js/gpluscomments.js", type='text/javascript')

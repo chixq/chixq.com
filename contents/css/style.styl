@@ -1,0 +1,397 @@
+// VARIABLES
+
+// mixins
+make-small-caps()
+  font-family $serif-alt
+  text-transform lowercase
+
+// colors
+$whiteish = #F6F5F2
+$whiteishgray = #E6E5E2
+$blackish = #444
+$red = #f55
+$gray = #aaa
+
+// fonts
+$serif = 'Alegreya', georgia, serif, '微软雅黑'
+$serif-alt = 'Alegreya SC', georgia, serif , '微软雅黑'
+$sans = 'Open Sans', sans-serif, '微软雅黑'
+$mono = menlo, consolas, monospace
+
+// font-size
+$font-size-large = 118% // ideal measure of ~64 characters
+$font-size-small = 100%
+
+// container sizes
+$container-width-large = 680px
+$container-width-small = 480px
+
+// sizes based on 3:5 stranded scale
+$sn3 = 0.4615
+$sn2 = 0.6154
+$sn1 = 0.7692
+$s0 = 1.0
+$s1 = 1.2308
+$s2 = 1.6154
+$s3 = 2.0
+$s4 = 2.6154
+$s5 = 3.2308
+$s6 = 4.2308
+$s7 = 5.2308
+$s8 = 6.8462
+$s9 = 8.4616
+
+// BASE STYLES
+
+// framework
+*
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  -o-box-sizing border-box
+  box-sizing border-box
+
+html
+  font-size $font-size-large
+  -webkit-text-size-adjust $font-size-large
+  -ms-text-size-adjust $font-size-large
+  background-image url(../asserts/images/background.jpg)
+body
+  margin 0
+  padding 0
+  height 100%
+  width 100%
+  text-rendering optimizeLegibility
+  font-family $serif
+  font-size $s1 rem
+  line-height $s3 rem
+  font-weight 400
+  color $blackish
+  // background $whiteish
+  background-image url(../asserts/images/background.jpg)
+
+.container
+  max-width $container-width-large
+  margin 0 auto
+  padding 0
+  word-break hyphenate
+  word-wrap break-word
+
+// links and typography
+footer ul li a
+  color $whiteishgray
+a
+  color $blackish
+  &:hover
+    color $red
+
+p, ul, ol, pre
+  margin-bottom $s0 rem
+
+h1, h2, h3, h4, h5, h6
+  font-weight normal
+  font-style italic
+  text-align center
+  margin ($s1 rem) 0
+  line-height $s4 rem
+  a
+    text-decoration none
+    color inherit
+    &:hover
+      color $blackish
+      text-decoration underline
+
+h1
+  font-size ($s4 rem)
+
+h2
+  font-size ($s3 rem)
+
+h3
+  font-size ($s2 rem)
+
+h4, h5, h6
+  font-size ($s1 rem)
+
+blockquote, ol, ul
+  margin 0
+  padding-left ($s5 rem)
+
+blockquote
+  padding-right ($s5 rem)
+
+ul
+  list-style-type square
+
+ol
+  list-style-type decimal
+
+// code
+pre
+  padding 0.8em
+  background $whiteishgray
+  white-space pre-wrap
+  white-space -moz-pre-wrap
+  white-space -pre-wrap
+  white-space -o-pre-wrap
+  word-wrap break-word
+  line-height 1.2em
+
+code
+  font-family $mono
+  font-size ($sn1 em)
+  color $blackish
+
+code.lang-markdown {
+  color: #424242
+}
+
+code.lang-markdown .header,
+code.lang-markdown .strong {
+  font-weight: bold
+}
+
+code.lang-markdown .emphasis {
+  font-style: italic
+}
+
+code.lang-markdown .horizontal_rule,
+code.lang-markdown .link_label,
+code.lang-markdown .code,
+code.lang-markdown .header,
+code.lang-markdown .link_url {
+  color: #555
+}
+
+code.lang-markdown .blockquote,
+code.lang-markdown .bullet {
+  color: #bbb
+}
+
+/* Tomorrow Theme */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+.tomorrow-comment, pre .comment, pre .title {
+  color: #8e908c
+}
+
+.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+  color: #c82829
+}
+
+.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+  color: #f5871f
+}
+
+.tomorrow-yellow, pre .class, pre .ruby .class .title, pre .css .rules .attribute {
+  color: #eab700
+}
+
+.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+  color: #718c00
+}
+
+.tomorrow-aqua, pre .css .hexcolor {
+  color: #3e999f
+}
+
+.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+  color: #4271ae
+}
+
+.tomorrow-purple, pre .keyword, pre .javascript .function {
+  color: #8959a8
+}
+
+// images
+img
+  margin 0 auto
+  display block
+  max-width 100%
+
+// SECTION STYLES
+
+// header and footer
+header, footer
+  text-align center
+
+header
+  margin ($s6 rem) 0
+
+.arrow_about
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  display: block
+  position: absolute
+  top: 8px
+  right: 8px
+  background-color: #000
+
+.arrow_about:hover
+  background-color: #333
+
+.about_label span
+  font-family: serif
+  text-transform: uppercase
+  display: block
+  width: auto
+  height: 1.98235em
+  position: relative
+  float: left
+  padding: 0 8px
+  font-size: 0.70952em
+  line-height: 2.05882em
+  color: #eee;
+  text-decoration: none
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.about_label span:hover
+  color: $whiteishgray
+
+.blog-title
+  color $red
+  font-family $sans
+  // text-transform uppercase
+  text-decoration none
+  letter-spacing 0.12em
+  text-align center
+
+footer ul, footer ul li, footer ul li p
+  display inline
+  padding 0 ($sn3 rem)
+
+footer
+  make-small-caps()
+
+.footer-container
+  // background $whiteishgray
+  background-image url(../asserts/images/footerbg.jpg)
+  padding ($s4 rem) 0
+  margin-top ($s8 rem)
+
+.copyright
+  color $whiteishgray
+  margin-top ($sn3 rem)
+
+.powerby
+  font-family $serif
+  display inline
+  font-size 0.8em
+  color $whiteishgray
+  text-transform none
+
+// posts
+.post
+  margin 0
+  padding-bottom ($s5 rem)
+
+.post .date
+  padding: 0 20px 0
+  margin: 20px 0
+  line-height: 1px
+  border-top 1px dotted $whiteishgray
+  // border-left: 200px dashed $whiteishgray
+  // border-right: 200px dashed $whiteishgray
+  text-align: center
+
+.post .date span
+  background-image url(../asserts/images/background.jpg)
+
+.post-title
+  margin-top ($s2 rem)
+  margin-bottom ($sn3 rem)
+
+.index-post-title
+  margin-top ($sn3 rem)
+
+// meta
+.date, .author, .more, .date a, .author a, .more a
+  make-small-caps()
+
+.date
+  text-align center
+  margin-bottom 0
+  color $gray
+
+.author
+  text-align center
+  margin-bottom ($s5 rem)
+  margin-top 0
+
+.by
+  font-family $serif
+  &:before
+    content 'By\00A0'
+    text-transform none
+
+.comment .icon-comment-empty
+  font-family $serif
+  right 8px
+  text-decoration:none
+
+
+
+.intro-content, .intro-content > p, .more
+  display inline
+
+.more
+  color inherit
+
+.pagenav,
+.pagenav a
+  text-align center
+  padding 0 2.5em
+  font-size 1.0em
+  text-decoration none
+
+// ARCHIVE STYLES
+
+.archive
+  margin 0 auto
+  padding-bottom ($s5 rem)
+
+.year
+  text-align center  
+
+.archive ul
+  padding 0
+  list-style-type none
+
+.archive ul li
+  clear:left
+  border-bottom dotted 1px $blackish
+  height ($s2 - $sn3 rem)
+  position relative
+  line-height ($s2 rem)
+  margin-bottom ($s0 rem)
+
+.archive-date, .archive-post-title
+  background-image url(../asserts/images/background.jpg)
+  // background $whiteish
+  // background white
+  float left
+  position absolute
+
+.archive-post-title
+  max-width 75%
+  display inline-block
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
+  padding-right ($sn3 rem)
+
+.archive-date
+  right 0
+  padding-left ($sn3 rem)
+
+// MEDIA QUERIES
+
+@media only screen and (max-width: 767px)
+  html
+    font-size font-size-small
+
+  .container
+    max-width $container-width-small
+    width 100%
+    padding 0 ($s2 em)

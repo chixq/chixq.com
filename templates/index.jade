@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  nav.arrow_about
+    a.about_label(href="/about/")
+      span About
+      span.icon-angle-circled-right
+  include author
+  each article in articles
+    article.post
+      header
+        p.date
+          span= moment.utc(article.date).format('DD MMMM YYYY')
+        h2
+          a(href=article.url)= article.title
+      section.intro-content
+        !{ typogr(article.intro).typogrify() }
+        if article.hasMore
+          p.more
+            a(href=article.url) more
+
+block prepend footer
+  div.pagenav
+    if prevPage
+      a(href=prevPage.url) « Newer
+    if nextPage
+      a(href=nextPage.url) Next page »

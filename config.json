@@ -1,0 +1,28 @@
+{
+  "locals": {
+    "url": "http://blog.chixq.com",
+    "name": "a Blog",
+    "owner": "Kris Chi",
+    "description": "Kris Chi's personal blog with the help of wintersmith"
+  },
+  "filenameTemplate":"/:title/index.html",
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "wintersmith-stylus"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 5
+  }
+}
