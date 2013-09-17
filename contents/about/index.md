@@ -1,5 +1,8 @@
 ---
-view: none
+title: About
+author: chixq
+date: 2012-10-01 15:00
+template: article.jade
 ---
 
 Wintersmith is made by [Johan Nordberg][1] and licensed under the [MIT-license][2].

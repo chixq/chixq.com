@@ -1,3 +1,4 @@
 {
-  "template": "archive.jade"
+  "template": "archive.jade",
+  "filename": "archive.html"
 }
