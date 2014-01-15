@@ -1,0 +1,18 @@
+extends layout
+
+block prepend title
+    | 404 |
+
+block content
+    article
+        header
+            h1 Page not found
+        section.content
+            p Sorry, but the page you were trying to view does not exist.
+            p It looks like this was the result of either:
+                ul
+                    li a mistyped address
+                    li an out-of-date link
+            p Try searching for the article on the
+                a(href='/') homepage
+                | .

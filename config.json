@@ -1,11 +1,11 @@
 {
   "locals": {
-    "url": "http://blog.chixq.com",
+    "url": "http://localhost:8080",
     "name": "a Blog",
     "owner": "Kris Chi",
     "description": "Kris Chi's personal blog with the help of wintersmith"
   },
-  "filenameTemplate":"/:title/index.html",
+  "filenameTemplate":"/:title",
   "plugins": [
     "./plugins/paginator.coffee",
     "wintersmith-stylus"
