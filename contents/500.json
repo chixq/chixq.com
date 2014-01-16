@@ -1,4 +1,5 @@
 {
     "title": "500",
-    "template": "500.jade"
+    "template": "500.jade",
+    "filename": "500.html"
 }

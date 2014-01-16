@@ -7,12 +7,10 @@ block content
     article
         header
             h1 Page not found
-        section.content
+        section.post
             p Sorry, but the page you were trying to view does not exist.
             p It looks like this was the result of either:
                 ul
                     li a mistyped address
                     li an out-of-date link
-            p Try searching for the article on the
-                a(href='/') homepage
-                | .
+            img(style="margin:o auto;" src=locals.url + "/asserts/images/404.gif")
