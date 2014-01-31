@@ -26,4 +26,3 @@ Find me:
 [weibo]:http://weibo.com/chixiaoqiang
 [github]:https://gihub.com/chixq
 [douban]:http://www.douban.com/people/3570042
-
