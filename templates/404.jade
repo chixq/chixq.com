@@ -1,0 +1,16 @@
+extends layout
+
+block prepend title
+    | 404 |
+
+block content
+    article
+        header
+            h1 Page not found
+        section.post
+            p Sorry, but the page you were trying to view does not exist.
+            p It looks like this was the result of either:
+                ul
+                    li a mistyped address
+                    li an out-of-date link
+            img(style="margin:o auto;" src=locals.url + "/asserts/images/404.gif")
