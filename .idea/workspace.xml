@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" name="Default" comment="" />
+    <list default="true" id="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="chixq.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/layout.jade" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1392798047209" ignored="false" />
     <file path="/style.styl" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1392798659332" ignored="false" />
+    <file path="/Dummy.txt" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1392799160096" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +41,7 @@
       <file leaf-file-name="style.styl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contents/css/style.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="209" column="9" selection-start="3447" selection-end="3447" vertical-scroll-proportion="0.44868034">
+            <state line="207" column="23" selection-start="3421" selection-end="3421" vertical-scroll-proportion="0.6979472">
               <folding />
             </state>
           </provider>
@@ -274,7 +278,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="Markdown" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -532,7 +536,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contents/css/style.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="9" selection-start="3447" selection-end="3447" vertical-scroll-proportion="0.44868034">
+        <state line="207" column="23" selection-start="3421" selection-end="3421" vertical-scroll-proportion="0.6979472">
           <folding />
         </state>
       </provider>
