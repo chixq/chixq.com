@@ -12,6 +12,7 @@ html(lang='en')
             link(rel='stylesheet', href='/css/style.css')
             link(rel='stylesheet', href='/css/fontello.css')
             link(rel='stylesheet', href='/css/animation.css')
+            link(rel='stylesheet', href='/css/highlight/solarized_dark.css')
             |<!--[if IE 7]>
             link(rel='stylesheet', href='/css/fontello-ie7.css')
             |<![endif]-->
@@ -44,4 +45,5 @@ html(lang='en')
                             li
                                 a(href="https://github.com/chixq") GitHub
     script(src=locals.url+"/asserts/js/googleanalytics.js", type="text/javascript")
-
+    script(src=locals.url+"/asserts/js/highlight.pack.js", type="text/javascript")
+    script hljs.initHighlightingOnLoad();
