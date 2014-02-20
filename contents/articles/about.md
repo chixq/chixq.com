@@ -5,7 +5,7 @@ date: 2014-01-30 22:51
 template: article.jade
 ---
 #### **a.k.a chilaoqi** (_chixq_)
-#### -present: Software Engineer@ Samsung Electronic
+#### current: Software Engineer@ Samsung Electronic
 
 * Samsung Telecommunication Research Institute (Cloud)
 * Nokia Research Centre of China (IMP)
@@ -21,7 +21,7 @@ Find me:
 * [Douban][douban]
 #### **The Man of Kind and Fearlessness**
 
-[google]:https://plus.google.com
+[google]:https://plus.google.com/u/0/102207509899025112495
 [twitter]:https://twitter.com/chilaoqi
 [weibo]:http://weibo.com/chixiaoqiang
 [github]:https://gihub.com/chixq
