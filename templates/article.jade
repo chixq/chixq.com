@@ -15,10 +15,11 @@ block content
         section.content!= page.html
 
 
-
+    div#indicator
     div.comment
         i.icon-comment-alt#addcomment(href="javascript:void(0)", onclick="renderComments()")
         i.icon-weibo(href="javascript:void(0)")
         div#gpluscomments
         script(src=locals.url + "/asserts/js/plusone.js", type="text/javascript")
         script(src=locals.url + "/asserts/js/gpluscomments.js", type='text/javascript')
+        script(src=locals.url + "/asserts/js/scroll.js", type="text/javascript")
