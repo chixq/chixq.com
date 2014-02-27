@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contents/asserts/js/scroll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/article.jade" afterPath="$PROJECT_DIR$/templates/article.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.jade" afterPath="$PROJECT_DIR$/templates/layout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/css/style.styl" afterPath="$PROJECT_DIR$/contents/css/style.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contents/articles/bloody-yanks/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chixq.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/layout.jade" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1393211963480" ignored="false" />
     <file path="/style.styl" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1393213691025" ignored="false" />
-    <file path="/Dummy.txt" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1393208210618" ignored="false" />
-    <file path="/index.md" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1392883086526" ignored="false" />
+    <file path="/Dummy.txt" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1393463241317" ignored="false" />
+    <file path="/index.md" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1393465563363" ignored="false" />
     <file path="/about.md" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1392875918756" ignored="false" />
     <file path="/scroll.js" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1393212913368" ignored="false" />
     <file path="/article.jade" changelist="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" time="1393213698612" ignored="false" />
@@ -48,7 +45,7 @@
       <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contents/articles/the-way-i-blog/index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="238" column="23" selection-start="7126" selection-end="7126" vertical-scroll-proportion="0.0">
+            <state line="8" column="25" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -67,15 +64,6 @@
         <entry file="file://$PROJECT_DIR$/templates/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="20" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.styl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contents/css/style.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="387" column="9" selection-start="6395" selection-end="6395" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,10 +96,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="27" selection-start="43" selection-end="43" vertical-scroll-proportion="0.051671732">
+            <state line="24" column="63" selection-start="481" selection-end="481" vertical-scroll-proportion="-15.692307">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/contents/articles/bloody-yanks/index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="9" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.6199702">
               <folding />
             </state>
           </provider>
@@ -144,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/contents/css/fontello.css" />
         <option value="$PROJECT_DIR$/contents/asserts/js/plusone.js" />
         <option value="$PROJECT_DIR$/contents/asserts/js/gpluscomments.js" />
         <option value="$PROJECT_DIR$/contents/404.json" />
@@ -160,6 +156,7 @@
         <option value="$PROJECT_DIR$/contents/css/style.styl" />
         <option value="$PROJECT_DIR$/templates/article.jade" />
         <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/contents/articles/bloody-yanks/index.md" />
       </list>
     </option>
   </component>
@@ -195,6 +192,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,7 +289,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="authors" />
+              <option name="myItemId" value="articles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,11 +307,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="asserts" />
+              <option name="myItemId" value="articles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="the-way-i-blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,13 +329,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="asserts" />
+              <option name="myItemId" value="articles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bloody-yanks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chixq.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chixq.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chixq.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chixq.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="articles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,8 +379,8 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -406,7 +439,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="22" width="1442" height="879" extended-state="7" />
+    <frame x="-1" y="22" width="1442" height="879" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -496,11 +529,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/contents/articles/bamboo-cutter/index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="36" selection-start="3981" selection-end="3981" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contents/articles/red-herring/index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="22" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0" />
@@ -508,16 +536,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="57" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="57" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="21" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contents/articles/the-way-i-blog/Long_winding_road.png">
@@ -530,23 +554,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contents/articles/about.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contents/articles/markdown-syntax/index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="181" column="4" selection-start="6220" selection-end="6220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/articles/the-way-i-blog/index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="23" selection-start="7126" selection-end="7126" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -574,9 +584,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contents/css/style.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="387" column="9" selection-start="6395" selection-end="6395" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="387" column="9" selection-start="6395" selection-end="6395" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/article.jade">
@@ -595,7 +603,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="43" selection-end="43" vertical-scroll-proportion="0.051671732">
+        <state line="24" column="63" selection-start="481" selection-end="481" vertical-scroll-proportion="-15.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/articles/about.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="7" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/articles/the-way-i-blog/index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/articles/bloody-yanks/index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="9" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.6199702">
           <folding />
         </state>
       </provider>
