@@ -7,14 +7,18 @@ $(window).scroll(function () {
         progress = scrollTop / ($(document).height() - viewportHeight),
         distance = progress * (viewportHeight - scrollbarHeight) + scrollbarHeight / 2 - $('#indicator').height() / 2
         ;
-    $('h3').each(function (i, e) {
-        if (scrollTop > (e.offsetTop - viewportHeight/2)){
-            $('#indicator').text(e.innerText);
-        }
-        if (scrollTop < $('h3')[0].offsetTop) {
-            $('#indicator').text($('h1')[0].innerText);
-        }
-    });
+    if($('h3').length !== 0){
+        $('h3').each(function (i, e) {
+            if (scrollTop > (e.offsetTop - viewportHeight/2)){
+                $('#indicator').text(e.innerHTML);
+            }
+            if (scrollTop < $('h3')[0].offsetTop) {
+                $('#indicator').text($('h1')[0].innerHTML);
+            }
+        });
+    } else{
+        $('#indicator').text($('h1')[0].innerHTML)
+    }
 
     $('#indicator')
         .css('top', distance)
