@@ -38,7 +38,8 @@ template: article.jade
 
 ### Start From Here
 
-&emsp;&emsp;以IMDB官方数据，从1880年到2021年，总共产出2,868,874部影视作品，其中包含电视剧，短片和一些游戏视频等，官方没有给出详尽的（In threater)电影统计，其实也是，很多影视作品，尤其一些B级片，很难界定是否是严格的movie。于此同时，IMDB对于科幻片（Sci-Fi）给出的数据，是76,178部，超过成人65,358部 和战争20,402部，这很很让人欣慰啊，至少证明人们对于是保护地球，回到未来对抗外星人什么的热情还是高于炸翻地铁，X翻地球的冲动。
+&emsp;&emsp;以IMDB官方数据，从1880年到2021年，总共产出2,868,874部影视作品，其中包含电视剧，短片和一些游戏视频等，其中In threater 或者 发出DVD的所谓正版电影，共计
+307,710部。于此同时，IMDB对于科幻片（Sci-Fi）给出的数据，是76,178部，占了电影总量的将近1/4啊，超过成人65,358部 和战争20,402部，这很很让人欣慰啊，至少证明人们对于是保护地球，回到未来对抗外星人什么的热情还是高于炸翻地铁，X翻地球的冲动。
 
 &emsp;&emsp;言归正传，此次整理是针对科幻片中时间旅行类，我在媳妇的带动下，看了些时间旅行类的电影，总结出来，时间旅行类的电影大致可以分为3类。
 - 穿梭时空能改变现在和将来的。单一宇宙正向发展。
@@ -50,9 +51,26 @@ template: article.jade
 
 &emsp;&emsp;这类电影最为意淫，回到过去修正错误，挽救自己甚至挽救全人类。
 
+![Alt Back To Future](backtofuturemovie.jpg)
+1.《回到未来》三部曲，最高分是第一部，8.5分。算是此类时间旅行电影的经典制作。现在看来，似乎是一个博士和他的小基友（高中生）的激情穿越故事。有意思的是第三集，上映于90年，博士失恋了，说到“She is one of a million, one of a billion, **one of a googleplex**. She is my dream, and I lost her for all time.”于是，Google成立于1998年。
 
-http://zh.wikipedia.org/wiki/Category:%E6%99%82%E9%96%93%E6%97%85%E8%A1%8C%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81
-http://www.imdb.com/chart/
-http://www.imdb.com/chart/top?ref_=cht_ql_2
-http://www.guokr.com/article/437454/
-http://www.douban.com/group/topic/9664106/
+![Alt Blackhole](frequency.jpg)
+2.《黑洞频率》7.3分。几乎是向《回到未来》致敬，儿子和父亲通过家里同一台长波电台跨越时空交流，并且互相“拯救”，温暖的亲情。
+
+![Alt Looper](looper.jpg)
+3.《环形使者》7.5分。一个通过非法时间旅行来帮助黑帮清理的人，被称作looper，为了不给黑帮留下麻烦，最终还要杀掉穿越过来的自己。
+
+![Alt Terminator](terminator.jpg)
+4.《终结者》系列最高分是第二部审判日8.1分。其中包括1，2，3还有最新的《终结者2018》以及一个电视剧《终结者外传》，很多人对于卡梅隆和阿诺的处女接触就是这部片子。反正我是记得我小时候跟着我爸妈分别原版英文，中文，还有当时镭射放映厅看了好几遍。
+
+![Alt Odyssey](obyss.jpg)
+5.《大话西游之月光宝盒》7.9分。星爷经典，引用IMDB中的介绍：”the Monkey King is reincarnated as the Joker. He now spends his time chasing two jealous women. When one of them is dying, the Joker goes back in time in an attempt to save her. “ 哎。
+
+#### 穿梭时空不能改变现在和将来之平行宇宙
+
+![Alt Source Code](sourcecode.jpg)
+1.《源代码》一次火车的事故中存活了一个人的......脑子，然后利用“高科技”让他的脑子回溯火车事故的前几分钟，试图拯救，后来发现，他只是拯救了那个世界的火车和......自己。
+
+
+
+#### 穿越时空不能改变现在和未来之诺维科夫自洽
