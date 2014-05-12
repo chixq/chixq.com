@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef8dd2e1-b6c4-4a18-9163-8fcfc4caa180" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contents/articles/movies-of-time-travel/index.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contents/asserts/js/wbcomments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build" afterPath="$PROJECT_DIR$/build" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/favicon.ico" afterPath="$PROJECT_DIR$/contents/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/articles/about.md" afterPath="$PROJECT_DIR$/contents/articles/about.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/article.jade" afterPath="$PROJECT_DIR$/templates/article.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/mixins.jade" afterPath="$PROJECT_DIR$/templates/mixins.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/asserts/js/plusone.js" afterPath="$PROJECT_DIR$/contents/asserts/js/plusone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/css/style.styl" afterPath="$PROJECT_DIR$/contents/css/style.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/articles/movies-of-time-travel/backtofuture.jpg" afterPath="$PROJECT_DIR$/build/articles/movies-of-time-travel/backtofuture.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/articles/movies-of-time-travel/backtofuture.jpg" afterPath="$PROJECT_DIR$/contents/articles/movies-of-time-travel/backtofuture.jpg" />
     </list>
     <ignored path="chixq.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,17 +36,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contents/articles/movies-of-time-travel/index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1545699" vertical-offset="344" max-vertical-offset="1088">
+            <state vertical-scroll-proportion="0.0" vertical-offset="344" max-vertical-offset="1088">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="backtofuture.jpg" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="backtofuture.jpg" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contents/articles/movies-of-time-travel/backtofuture.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
@@ -745,11 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contents/articles/movies-of-time-travel/backtofuture.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/article.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
@@ -760,10 +747,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contents/articles/movies-of-time-travel/index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1545699" vertical-offset="344" max-vertical-offset="1088">
+        <state vertical-scroll-proportion="0.0" vertical-offset="344" max-vertical-offset="1088">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/articles/movies-of-time-travel/backtofuture.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
