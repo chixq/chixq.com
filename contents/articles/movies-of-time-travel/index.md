@@ -47,6 +47,8 @@ template: article.jade
  - 平行宇宙。改变过去，会出现一个被改变的世界和一个未被改变的世界。
  - 宿命宇宙。改变过去，该来的还是会来。所谓诺维科夫自洽性原则。
 
+ * * *
+
 #### 穿梭时空能改变现在和将来
 
 &emsp;&emsp;这类电影最为意淫，回到过去修正错误，挽救自己甚至挽救全人类。
@@ -66,11 +68,26 @@ template: article.jade
 ![Alt Odyssey](obyss.jpg)
 5.《大话西游之月光宝盒》7.9分。星爷经典，引用IMDB中的介绍：”the Monkey King is reincarnated as the Joker. He now spends his time chasing two jealous women. When one of them is dying, the Joker goes back in time in an attempt to save her. “ 哎。
 
+![Alt butterfly](butterfly.jpg)
+6.《蝴蝶效应》I，II，III，最高的是第三部7.7分，其他两部的评分才只有4.4和5.5分。穿越带来的是信息不match，不match就要重组，重组就是整理大脑，我的意思是生理上，或者说物理上的整理。
+
+![Alt questions](questions.jpg)
+7.《有关时间旅行的热门问题》
+
+* * *
+
 #### 穿梭时空不能改变现在和将来之平行宇宙
 
 ![Alt Source Code](sourcecode.jpg)
 1.《源代码》一次火车的事故中存活了一个人的......脑子，然后利用“高科技”让他的脑子回溯火车事故的前几分钟，试图拯救，后来发现，他只是拯救了那个世界的火车和......自己。
 
-
+* * * 
 
 #### 穿越时空不能改变现在和未来之诺维科夫自洽
+
+![Alt Time Travelerswife](travelerswife.jpg)
+
+1.《时间旅行者的妻子》7.1分。“帮我们抓住过去的，是回忆；带我们走向未来的，是梦想。”，无论怎么穿越时空，都改变不了，爱是永恒的。
+
+![Alt monkey](monkey.jpg)
+2.《十二只猴子》
