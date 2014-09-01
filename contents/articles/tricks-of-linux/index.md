@@ -7,6 +7,7 @@ template: article.jade
 
 对于*nix 系统，大部分的工作都在Terminal中，很多人即使日常频繁使用很多年，也只能用些基本的ls，cd, ps, vim等等命令，殊不知nix系统有着非常多有的Tricks，往往这些Tricks也是你最需要的。而且， 我相信我这里面东西是你在别的地方没见过的。
 
+[!Alt cmd](cmd.png)
 
 Bash Shell
 ----
