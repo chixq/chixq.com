@@ -13,10 +13,10 @@ template: article.jade
 * Northwest Polytechnical University
 
 
-#### **The Man of Kind and Fearlessness**
+#### **The Man of Kind and Fearless**
 
 <div class="insta">
-<iframe src="http://www.intagme.com/in/?u=Y2hpeHF8c2x8MjY1fDJ8M3x8eWVzfDV8dW5kZWZpbmVkfG5v" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:280px; height: 280px" ></iframe>
+<iframe src="http://snapwidget.com/sl/?u=Y2hpeHF8aW58MjcwfDN8M3xmZmZmZmZ8bm98MjB8ZmFkZU91dHxvblN0YXJ0fHllc3xubw==&ve=040914" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:265px; height:265px"></iframe>
 </div>
 
 Find me:
