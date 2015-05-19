@@ -1,5 +1,5 @@
 ---
-title: "告警监控准则"
+title: "Alerting & Monitoring Philosophy"
 author: Kris Chi
 date: 2015-03-03
 template: article.jade

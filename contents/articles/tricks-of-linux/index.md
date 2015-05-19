@@ -19,6 +19,16 @@ Bash Shell
 
 * 'Ctrl-E'：光标移动到道歉输入命令的最后一个字符
 
+* ‘Ctrl-K’: 删除光标之后的命令,一般配合Ctrl-A
+
+* ‘Ctrl-U’: 删除光标之前的命令,在输错密码时非常好用
+
+* ‘Ctrl-Y’: Y代表yank(copy), 从缓冲区粘贴,当然 Ctrl-U, Ctrl-K删除命令都在缓冲区内
+
+* ‘Ctrl-H’: 等于退格键,想想VIM操作就懂了.
+
+* ‘Ctrl-P’: 上一条命令,等同于方向键↑
+
 * ' ^ ': 如同bash命令sed的作用一样，替换前一条命令最后一个参数。
 
     > ls docs; ^docs^web
