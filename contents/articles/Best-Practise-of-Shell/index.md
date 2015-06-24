@@ -19,7 +19,7 @@ Shell脚本中的变量只能包含数字、字母、下划线，尤其不能包
 
 2. $$: 当前脚本的pid，一般用来处理多个脚本实例问题。
 
-3. $* 和$@ :　这两种表达都指代所有向脚本传递的参数，只是在脚本中如果加了双引号，”$@” 会
+3. "$*" 和 "$@" :　这两种表达都指代所有向脚本传递的参数，只是在脚本中如果加了双引号，”$@” 会
 将所有参数分开输出“$1”, “$2” ... “$n” ，方便For-loop，而 ”$*” 将所有参数作为一个整体输出 “$1
 $2 ... $n”
 
@@ -208,6 +208,8 @@ hash $1 2>/dev/null || { echo >&2 "command $1 not found"; exit 1; }
 这里放几个wiki和资料，会随时更新：
 
 [Fixing Unix/Linux/POSIX Filenames:Control Characters (such as Newline), Leading Dashes, and Other Problems](http://www.dwheeler.com/essays/fixing-unix-linux-filenames.html)
+
 [Sending signal to Processes](http://bash.cyberciti.biz/guide/Sending_signal_to_Processes)
+
 [Setting shell options](http://bash.cyberciti.biz/guide/Setting_shell_options)
 
