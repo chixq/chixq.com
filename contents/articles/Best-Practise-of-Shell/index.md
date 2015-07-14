@@ -9,6 +9,7 @@ Shell 脚本，Make构建工具是 Linux/Unix 中使用率最高，也是最能�
 优势的两个方面，最近一直在和 Shell 打交道，看了一些文章资料，总结了一下 Shell 脚本编写的最佳
 实践, 记录一些 Shell Tips 。<span class="more"></span>
 
+![shell](shell.jpg)
 ### Magic $
 
 Shell脚本中的变量只能包含数字、字母、下划线，尤其不能包含美元符号$，是因为 $ 符号在Shell脚本
