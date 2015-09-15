@@ -5,7 +5,7 @@ date: 2014-01-30 22:51
 template: article.jade
 ---
 #### **a.k.a chilaoqi** (_chixq_)
-#### current: Software Engineer@ Samsung Electronic
+#### current: Software Engineer@[FIT2CLOUD][f2c]
 
 * Samsung Telecommunication Research Institute (Cloud)
 * Nokia Research Centre of China (IMP)
@@ -31,3 +31,4 @@ Find me:
 [weibo]:http://weibo.com/chixiaoqiang
 [github]:https://gihub.com/chixq
 [douban]:http://www.douban.com/people/3570042
+[f2c]:http://fit2cloud.com
