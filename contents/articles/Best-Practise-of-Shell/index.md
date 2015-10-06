@@ -3,6 +3,7 @@ title: "Best Practise of Shell"
 author: Kris
 date: 2015-06-13
 template: article.jade
+tags: 原创, 运维
 ---
 
 Shell 脚本，Make构建工具是 Linux/Unix 中使用率最高，也是最能提高工作效率，体现 Linux/Unix 

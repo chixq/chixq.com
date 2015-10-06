@@ -3,6 +3,7 @@ title: "Be Kind"
 author: Kris Chi
 date: 2015-05-13
 template: article.jade
+tags: 原创
 ---
 
 IT从业人员互相瞧不上太常见了,可以参见[程序员鄙视链][refer],但是慢慢地工作一两年,让我知道,其实这并没有什么卵用.

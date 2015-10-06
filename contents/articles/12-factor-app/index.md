@@ -3,6 +3,7 @@ title: 中文翻译：Heroku's 12-Factor-APP
 author: chixq
 date: 2014-11-09
 template: article.jade
+tags: 原创, 翻译
 ---
     
 Heroku 一度被追捧为Best PaaS Platform，我没有深究到底这个头衔是否准确，但就最近发现了几篇Heroku Platform的经验，知识总结分享来说，对于我这种刚入DevOps的新人都大有裨益。

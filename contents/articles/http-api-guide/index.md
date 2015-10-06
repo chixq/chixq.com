@@ -3,6 +3,7 @@ title: HTTP API 设计指南
 author: chixq
 date: 2014-11-1
 template: article.jade
+tags: 原创, 翻译
 ---
 
 一段时间前，Heroku在其Github Repo发表了一篇关于HTTP API设计的经验和总结，这些经验都建立在Heroku Platform的开发和运维之上，非常值得借鉴。

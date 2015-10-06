@@ -16,7 +16,8 @@ $red = #f55
 $gray = #aaa
 
 // fonts
-$serif = 'Alegreya', georgia, Helvetica, "Segoe UI", "Hiragino Sans GB", "Microsoft YaHei", Arial, "WenQuanYi Micro Hei", serif
+$serif = 'Alegreya', georgia, serif
+//$serif = 'Alegreya', georgia, Helvetica, "Segoe UI", "Hiragino Sans GB", "Microsoft YaHei", Arial, "WenQuanYi Micro Hei", serif
 $serif-alt = 'Alegreya SC', georgia, Helvetica, "Segoe UI", "Hiragino Sans GB", "Microsoft YaHei", Arial, "WenQuanYi Micro Hei", serif
 $sans = 'Open Sans', sans-serif
 $mono = menlo, consolas, monospace
@@ -71,6 +72,24 @@ body
   color $blackish
   // background $whiteish
   background-image url(../asserts/images/background.jpg)
+
+.tag-index
+  font-size 16px
+  margin-top -15px
+
+.tags
+  margin-top -25px
+  margin-bottom 5px
+  text-align center
+
+.tag-link
+  padding 3px 6px
+  font-size 16px
+  margin-left 13px
+  margin-right 13px
+  text-decoration none
+  background #eee
+  border-radius 3px
 
 .container
   max-width $container-width-large
@@ -130,7 +149,7 @@ ol
 
 // code
 pre
-  padding 0.2em
+//  padding 0.2em
   background $whiteishgray
   white-space pre-wrap
   white-space -moz-pre-wrap
@@ -143,6 +162,10 @@ code
   font-family $mono
   font-size ($sn1 em)
   color $blackish
+  border-radius 3px
+
+.hljs
+  padding 0.8em
 
 code.lang-markdown {
   color: #424242

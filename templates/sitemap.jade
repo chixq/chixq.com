@@ -1,0 +1,71 @@
+doctype xml
+urlset(
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance",
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd",
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+  - var buildDate = new Date().toISOString()
+  url
+    loc
+     =locals.url
+    lastmod= buildDate
+    changefreq daily
+    priority 1.0
+  url
+    loc= locals.url + "/archive.html"
+    lastmod= buildDate
+    changefreq daily
+    priority 1.0
+  - var articles = _.chain(contents.articles._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().filter(function(article) {
+  -   return article.metadata.ignored !== true
+  - }).sortBy(function(item) {
+  -   return -item.date
+  - }).value()
+  for article in articles
+    - var permalink = locals.url + article.url
+    url
+      loc= permalink
+      lastmod= article.date.toISOString()
+      changefreq daily
+      priority 0.8
+
+  - var tags = _.chain(contents.articles._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().filter(function(article) {
+  -   return article.metadata.ignored !== true
+  - }).map(function(article) {
+  -   return article.metadata.tags
+  - }).flatten().compact().uniq().value()
+
+  for tag in tags
+    - var permalink = locals.url + "/tag/" + tag
+    url
+      loc= permalink
+      lastmod= buildDate
+      changefreq daily
+      priority 0.8
+
+  - var categories = _.chain(contents.articles._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().filter(function(article) {
+  -   return article.metadata.ignored !== true
+  - }).map(function(article) {
+  -   return article.metadata.categories
+  - }).flatten().compact().uniq().value()
+
+  for category in categories
+    - var permalink = locals.url + "/category/" + category
+    url
+      loc= permalink
+      lastmod= buildDate
+      changefreq daily
+      priority 0.8
+
+  - var archives = _.chain(contents.articles._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().filter(function(article) {
+  -   return article.metadata.ignored !== true
+  - }).map(function(article) {
+  -   return article.date.getFullYear()
+  - }).flatten().compact().uniq().value()

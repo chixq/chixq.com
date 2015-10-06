@@ -12,8 +12,11 @@ block content
         mixin date(page.date)
         h1.post-title= page.title
         mixin author(page.metadata.author)
+        - var tags = env.helpers.getTagsFromArticle(page)
+        p.tags
+            each tag in tags
+                a.tag-link(href=env.helpers.getTagHome(tag).url)= tag
         section.content!= page.html
-
 
     div#indicator
     div.comment
