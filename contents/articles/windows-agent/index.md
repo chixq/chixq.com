@@ -34,6 +34,7 @@ Agent 就是安装在被管理机器中的代理服务，负责同步被管理�
 4. windows command line （batch 脚本）由于历史原因，涉及内码表（ANSI）等编码问题，在执行 batch 脚本之前可以先执行 @chcp 65001 > NUL 来获得 UTF-8 编码的输出， 65001 是 Windows 上 UTF-8 的 code page no。
 5. Windows Powershell 执行脚本有权限控制，一般不会允许执行任意脚本，可以通过 powershell.exe -GetExecutionPolicy 查看，默认是 remote-signed。如果要执行用户自定义脚本，可以先执行设置脚本权限命令：powershell.exe -SetExecutionPolicy unrestricted 即可执行任意脚本了。
 6. Windows 2003 内核不是 Unicode 的，需要特殊处理（或者干脆不支持了 T T）。
+7. Windows 编码问题，加上 Python2 的自己的编码坑，加起来就是一锅粥，强烈推荐一个开源库 chardet，会自动识别任意 string 的编码格式，并附带识别可信度（confidence），这样只要遇到任何编码的字符串，先转成 unicode，再转成 UTF-8 编码 String 即可。
 
 遇到的问题：
 
@@ -50,3 +51,5 @@ Agent 就是安装在被管理机器中的代理服务，负责同步被管理�
 ### Windows IE 适配的一些经验
 
 待完成
+
+
