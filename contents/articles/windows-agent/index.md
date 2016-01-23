@@ -6,7 +6,7 @@ template: article.jade
 ---
 
 ### Agent 原理
-Agent 就是安装在被管理机器中的代理服务，负责同步被管理主机的信息，上报监控信息，下发操作指令，这是现在云主机管理，监控中非常通用和普遍的手段。
+Agent 就是安装在被管理机器中的代理服务，负责同步被管理主机的信息，上报监控信息，下发操作指令，这是现在云主机管理，监控中非常通用和普遍的手段。<span class="more"></span>
 
 鉴于 Agent 会直接部署于 OS 内，我眼中 Agent 必须具备如下特性：
 
@@ -36,7 +36,7 @@ Agent 就是安装在被管理机器中的代理服务，负责同步被管理�
 6. Windows 2003 内核不是 Unicode 的，需要特殊处理（或者干脆不支持了 T T）。
 7. Windows 编码问题，加上 Python2 的自己的编码坑，加起来就是一锅粥，强烈推荐一个开源库 chardet，会自动识别任意 string 的编码格式，并附带识别可信度（confidence），这样只要遇到任何编码的字符串，先转成 unicode，再转成 UTF-8 编码 String 即可。
 
-遇到的问题：
+>遇到的问题：
 
 利用 pywin32 安装 Service 出错情况：
 1. 服务注册／启动不了，大多数情况是 Python Agent 工程没有被正确安装，通俗的讲就是 Agent 对于系统“不可见”，可以尝试在 Python CLI 中执行 `import <agent_project_module>` 看能否成功。
