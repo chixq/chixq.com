@@ -391,7 +391,16 @@ self_signed_context = ssl._create_unverified_context()
 url_resp = urllib2.urlopen(url, context=self_signed_context).read()
 ```
 
-进入正文，IE 浏览器的最新版 IE 11， IE edge 基本已经和 webkit 内核差不多了，只需要打开支持 IE 11，IE edge 基本上也没有太大问题。
+进入正文，IE 浏览器的最新版 IE 11， IE edge 基本已经和 webkit 内核差不多了，只需要打开支持 IE 11，IE edge 基本上也没有太大问题, 对于 IE8，IE9 的支持，可以用 conditional css 来解决，即在页面 head 标签中添加类似如下：
+
+```
+<!--[if IE]>
+<link rel=”stylesheet” type=”text/css” href=”/static/easyui/css/only-for-ie.css” />
+<![endif]-->
+<!--[if IE 8]>
+<link rel=”stylesheet” type=”text/css” href=”/static/menu/css/navbar-for-ie8.css” />
+<![endif]-->
+```
 
 **IE11** Bug
 
