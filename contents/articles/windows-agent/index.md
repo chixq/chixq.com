@@ -3,12 +3,15 @@ title: "Windows Agent 的经验和坑"
 author: Kris
 date: 2016-01-18
 template: article.jade
+tags:原创,windows,agent,运维
 ---
 
 ### Agent 原理
 Agent 就是安装在被管理机器中的代理服务，负责同步被管理主机的信息，上报监控信息，下发操作指令，这是现在云主机管理，监控中非常通用和普遍的手段。<span class="more"></span>
 
-鉴于 Agent 会直接部署于 OS 内，我眼中 Agent 必须具备如下特性：
+![Windows & Linux Agents](agents.jpg)
+
+Agent 的载体既可以是 Linux 下的一个 daemon，也可以是 Windows 下的某个 service。鉴于 Agent 会直接部署于 OS 内，我眼中 Agent 必须具备如下特性：
 
 * 自控
 * 低开销／高并发
@@ -18,7 +21,7 @@ Agent 就是安装在被管理机器中的代理服务，负责同步被管理�
 
 **低开销／高并发**：这点非常好理解，现在云主机管理，动辄成百上千台（5 台以内 Agent 也无法发挥最大功效），监控告警，日志查询等操作相应的也是成百上千倍的指令，如果 Agent 无法做到消耗很小的 OS 资源实现高并发，那么不仅对 OS 上真实的业务系统影响很大，更甚者会导致整个 Agent 崩溃出现一些意外的连锁错误。
 
-**环境隔离**：我们知道，OS 中的真实业务系统会依赖一些环境组建（JVM，Python 等）和中间件服务（MySQL 等），Agent 应该完全和 OS 中的环境隔离，不影响、不依赖系统本来的环境配置也不被影响和依赖。只有这样，Agent 才能稳定地运行，否则，例如系统 Python 环境升级或者重新配置，可能导致 Agent 出错退出或者误操作。
+**环境隔离**：我们知道，OS 中的真实业务系统会依赖一些环境组建（JVM，Python 等）和中间件服务（MySQL 等），Agent 应该完全和 OS 中的环境隔离，不影响、不依赖系统本来的环境配置也不被影响和依赖。只有这样，Agent 才能稳定地，不依赖于 OS，也不依赖于 OS level的 runtime 运行，否则，例如系统 Python 环境升级或者重新配置，可能导致 Agent 出错退出或者误操作。
 
 综上，我们考虑几个 Agent 可能会用到的技术选型，比如利用消息中间件、epoll 承载低开销／高并发， 比如利用 Docker／Vagrant 将 Agent 依赖的环境配置打包，比如开一个线程／进程专门用来维护 Agent 的升级、启动、停止等。
 
@@ -392,7 +395,7 @@ url_resp = urllib2.urlopen(url, context=self_signed_context).read()
 
 **IE11** Bug
 
-但是，IE 11有个大bug（在微软 Dev Center [已经 file 但是仍然没有解决](ie11_bug) ），尤其在 form 提交中，如果 form 中刚好包含 input type="password", IE 11 又开了自动保存表单用户密码，form提交就会出错。（如果发现登录／注册页面在 IE 11 下总是出错，其它版本没问题，大概就是这个问题。）这时候只要将 IE 11 的自动保存表单用户密码关掉就 OK 了。不过这种很不友好，通过各种 dig 和 hack，发现一条捷径，即通过 js 判断 IE11，如果是的话，把所有涉及用户名，密码的<input>标签人为的插入一个<input display=none>，由于加入的标签没有 id／name，这样即不影响 form 提交的参数，还完美的导致 IE 11的自动保存用户名／密码功能失效，也就不会触发 IE11 的 bug，绕过 bug 后 form 提交就没有任何问题。
+但是，IE 11有个大bug（在微软 Dev Center [已经 file 但是仍然没有解决](ie11_bug) ），尤其在 form 提交中，如果 form 中刚好包含 `input type="password"`, IE 11 又开了自动保存表单用户密码，form提交就会出错。（如果发现登录／注册页面在 IE 11 下总是出错，其它版本没问题，大概就是这个问题。）这时候只要将 IE 11 的自动保存表单用户密码关掉就 OK 了。不过这种很不友好，通过各种 dig 和 hack，发现一条捷径，即通过 js 判断 IE11，如果是的话，把所有涉及用户名，密码的<input>标签人为的插入一个`<input display=none>`，由于加入的标签没有 `id／name`，这样即不影响 form 提交的参数，还完美的导致 IE 11的自动保存用户名／密码功能失效，也就不会触发 IE11 的 bug，绕过 bug 后 form 提交就没有任何问题。
 
 **IE ajax json**无法解析
 
