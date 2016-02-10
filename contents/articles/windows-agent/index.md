@@ -3,7 +3,7 @@ title: "Windows Agent 的经验和坑"
 author: Kris
 date: 2016-01-18
 template: article.jade
-tags:原创,windows,agent,运维
+tags: 原创, windows, agent, 运维
 ---
 
 ### Agent 原理
