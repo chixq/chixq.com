@@ -395,7 +395,7 @@ url_resp = urllib2.urlopen(url, context=self_signed_context).read()
 
 **IE11** Bug
 
-但是，IE 11有个大bug（在微软 Dev Center [已经 file 但是仍然没有解决](ie11_bug) ），尤其在 form 提交中，如果 form 中刚好包含 `input type="password"`, IE 11 又开了自动保存表单用户密码，form提交就会出错。（如果发现登录／注册页面在 IE 11 下总是出错，其它版本没问题，大概就是这个问题。）这时候只要将 IE 11 的自动保存表单用户密码关掉就 OK 了。不过这种很不友好，通过各种 dig 和 hack，发现一条捷径，即通过 js 判断 IE11，如果是的话，把所有涉及用户名，密码的<input>标签人为的插入一个`<input display=none>`，由于加入的标签没有 `id／name`，这样即不影响 form 提交的参数，还完美的导致 IE 11的自动保存用户名／密码功能失效，也就不会触发 IE11 的 bug，绕过 bug 后 form 提交就没有任何问题。
+但是，IE 11有个大bug（在微软 Dev Center [已经 file 但是仍然没有解决](ie11_bug) ），尤其在 form 提交中，如果 form 中刚好包含 `input type="password"`, IE 11 又开了自动保存表单用户密码，form提交就会出错。（如果发现登录／注册页面在 IE 11 下总是出错，其它版本没问题，大概就是这个问题。）这时候只要将 IE 11 的自动保存表单用户密码关掉就 OK 了。不过这种很不友好，通过各种 dig 和 hack，发现一条捷径，即通过 js 判断 IE11，如果是的话，把所有涉及用户名，密码的`<input>`标签人为的插入一个`<input display=none>`，由于加入的标签没有 `id／name`，这样即不影响 form 提交的参数，还完美的导致 IE 11的自动保存用户名／密码功能失效，也就不会触发 IE11 的 bug，绕过 bug 后 form 提交就没有任何问题。
 
 **IE ajax json**无法解析
 
