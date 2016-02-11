@@ -159,9 +159,13 @@ logout
 通过上述操作，你就可以在客户端中按照如下配置信息连接 Linux 上部署的 DB2 进行测试了。
 
 > Host: <Linux-IPaddress>
+> 
 > Port: 50000
+> 
 > db: TUT_DB
+> 
 > User: db2inst1
+> 
 > Password: 创建用户时填写的
 
 
