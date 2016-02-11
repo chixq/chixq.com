@@ -6,10 +6,11 @@ DATE=$(shell date +%Y-%m-%d)
 new:
 	mkdir -p contents/articles/$(TITLE);\
 	echo "---" > contents/articles/$(TITLE)/index.md;\
-	echo 'title: "$(T)"' >> contents/articles/$(TITLE)/index.md;\
+	echo 'title: $(T)' >> contents/articles/$(TITLE)/index.md;\
 	echo 'author: Kris' >> contents/articles/$(TITLE)/index.md;\
 	echo 'date: $(DATE)' >> contents/articles/$(TITLE)/index.md;\
 	echo 'template: article.jade' >> contents/articles/$(TITLE)/index.md;\
+	echo 'tags: 原创' >> contents/articles/$(TITLE)/index.md;\
 	echo '---' >> contents/articles/$(TITLE)/index.md;\
 	vim contents/articles/$(TITLE)/index.md
 
