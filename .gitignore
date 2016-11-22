@@ -1,4 +1,5 @@
-build
+build/
 .idea
 .idea/*
 build/*
+.DS_Store
