@@ -1,14 +1,23 @@
 ---
-title: AWS CentOS 6.5 root 盘扩容
+title: AWS CentOS/RHEL root 盘扩容
 author: Kris
 date: 2016-03-21
 template: article.jade
-tags: 原创
+tags: 原创, AWS, centos, rhel
 ---
 
  AWS 没有 official 的提供 CentOS 6.5 的 AMI，我选择了一个 AWS 社区镜像推荐的一个 CentOS6.5 （ami-13c30a7e）（AWS 一般会按顺序，将最新最稳定的 AMI 靠前排列），但是当我
  无论 root 盘选择多少，最后启动的时候，会发现 ／ 分区总是 8G, AWS 文档推荐你停机 -> detach 磁盘 -> 新启动一个 instance 再attach 第一步的磁盘 -> 调整大小后再启动原来的instance，选择 root 挂载点。
- 这一套非常麻烦，还要多启动一台 instance，后来发现一个工具 resize2fs，非常好用。
+ 这一套非常麻烦，还要多启动一台 instance，后来发现一个工具 resize2fs，可以支持 online 扩容，不用 stop 机器，也不用多启动其他机器。
+
+**update**: 今天去一个客户现场同样发现了这个问题，不过是 RHEL 6.8 的一个 AMI，启动之后只有一个 6G 的/ ,并且磁盘是 GPT 分区的， fdisk 不能使用（会提示：WARNING: GPT (GUID Partition Table) detected on ‘/dev/xvda’! The util fdisk doesn’t support GPT. Use GNU Parted.）
+经过一圈dig，发现一个非常好用的工具， `growpart`, 可以支持 online 扩容，只需要执行：
+
+```
+growpart /dev/xvda 1
+```
+
+其中 /dev/xvda 是你的设备名称，1 是 6G 那个分区号（lsblk 可以查看），然后重启就会发现， root 盘已经扩容完成，非常方便。
 
 首先，看下当前系统挂载情况。
 
