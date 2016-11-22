@@ -36,10 +36,10 @@ PS: 翻译Heroku的另一篇， [HTTP API 设计指南][http-api]
 
 ### INTRODUCTION
 
-当今，软件通常作为服务：即web apps 或者 SaaS，*The twelve-factor app* （12-factor）是创建SaaS的一套方法论：
+当今，软件通常作为服务：即 SaaS，*The twelve-factor app* （12-factor）是创建SaaS的一套方法论：
 
 * 使用标准化的流程控制以减少新员工了解整个工程的时间。
-* 各个系统之间尽量隔离，并且对系统的移植能提供最大可能性。
+* 各个系统之间尽量隔离，并且对系统的移植能提供最大便捷性。
 * 可以适应现在主流的云平台，不受限于服务器和服务器管理。
 * 减小生产系统和开发系统的差异，最大程度的通过CD（continuous deployment）来实现敏捷。 
 * 不需要特别的改变工具链，架构或者开发流程就能实现服务扩展。
