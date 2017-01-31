@@ -1,8 +1,9 @@
 ---
-title: AWS DevOps Professional Level Passed!
+title: AWS DevOps Engineer 专业级别认证考经
 author: Kris Chi
 date: 2017-01-31
 template: article.jade
+tags: aws, devops, 原创,考经
 ---
 
 今天是2017年春节的大年初四，想写点什么，刚好年前的时候我 AWS DevOps Professional 通过了，这里就总结下考试复习和机考的要点，希望能帮助更多的后来的人。<span class="more"></span>
