@@ -1,5 +1,5 @@
 ---
-title: AWS Certificated DevOps Professional Level Passed!
+title: AWS DevOps Professional Level Passed!
 author: Kris Chi
 date: 2017-01-31
 template: article.jade
