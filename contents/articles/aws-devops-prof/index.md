@@ -8,7 +8,7 @@ tags: aws, devops, 原创,考经
 
 今天是2017年春节的大年初四，想写点什么，刚好年前的时候我 AWS DevOps Professional 通过了，这里就总结下考试复习和机考的要点，希望能帮助更多的后来的人。<span class="more"></span>
 
-**一、AWS DevOps Certification**
+### 一、AWS DevOps Certification
 
 获取 AWS 认证是在云计算行业，甚至整个 IT 行业是非常有说服力的，以证明工程师具备相应的专业技能和技术知识。从我自己感觉，备考 AWS 认证，不仅是对 AWS 体系的深入了解学习（这也是 AWS 的初衷，让人人都成为 AWS 的布道师），更是提高了自己对于通用 IT 基础设施，软件架构的理解，对于常见 Troubleshooting 的敏锐，以及代码，网络安全的意识。
 
@@ -26,7 +26,7 @@ tags: aws, devops, 原创,考经
 
 
 
-**二、AWS DevOps 考点**
+### 二、AWS DevOps 考点
 
 先把大规模杀伤性武器武器放出来，考 DevOps Professional **必看**如下几个 re:Invent 视频，对照官方白皮书，基本覆盖了 60% 以上的考分。
 
@@ -113,7 +113,7 @@ tags: aws, devops, 原创,考经
 
     ​
 
-**三、考试技巧**
+### 三、考试技巧
 
 这个比较投机取巧，但是非常有效  :)
 
